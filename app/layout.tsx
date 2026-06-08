@@ -16,7 +16,11 @@ export const viewport: Viewport = {
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        <div style={{ maxWidth: 430, margin: '0 auto', position: 'relative', overflow: 'hidden' }}>
+          {children}
+        </div>
+      </body>
     </html>
   );
 }
